@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset='UTF-8'>
+<meta name = 'viewport' content='width=device-width', initial-scale='1'>
+<link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Royal Mark Design</title>
+
+<section class='header'>
+  <head>
+    <h1>Regalia.</h1>
+  </head>
+  <body>
+    <p>Showcasing Design Projects by Mark Abramov</p>
+  </body>
+</section>
+
+</html>
+
+<nav class='navbar'>
+  <a href='#home'>Welcome!</a>
+  <a href='#designs'>Designs</a>
+  <a href='#resume'>Resume</a>
+  <a href='#search' class='right'>Search</a>
+</nav>
+
+<section>
+  <img class='mySlides' src='./JPGs/collage1.jpg' style='width:100%'>
+  <img class='mySlides' src='./JPGs/collage2.jpg' style='width:100%'>
+  <img class='mySlides' src='./JPGs/collage3.jpg' style='width:100%'>
+</section>
+
+<script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName('mySlides');
+    for(i=0; i<x.length; i++){
+      x[i].style.display = 'none'
+    }
+    myIndex++;
+    if (myIndex > x.length) myIndex = 1;
+    x[myIndex-1].style.display = 'block';
+    setTimeout(carousel, 4000);
+  }
+</script>
+
+
+
+<div class='row'>
+  <div clas='side'>...</div>
+  <div class='main'>...</div>
+</div>
+
+<div class='footer'>
+  <h2>Footer</h2>
+</div>
