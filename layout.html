@@ -1,69 +1,51 @@
 <!DOCTYPE html>
-<meta charset='UTF-8'>
-<meta name = 'viewport' content='width=device-width', initial-scale='1'>
-<link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
-<link rel="stylesheet" href="style.css">
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width' , initial-scale='1'>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+<header>
+    <title>Regalia. by Mark Abramov</title>
 
-
-<title>Regalia. by Mark Abramov</title>
-
-<section class='header'>
-  <head>
-    <h1>Regalia.</h1>
-  </head>
-  <body>
-    <p>Showcasing Design Projects by Mark Abramov</p>
-  </body>
-</section>
-
-</html>
+    <section class='header'>
+        <h1>Regalia.</h1>
+        <p>Showcasing Design Projects by Mark Abramov</p>
+    </section>
+</header>
 
 <nav class='navbar'>
-  <a href='#home'>Welcome!</a>
-  <a href='#designs'>Designs</a>
-  <a href='Mark Abramov Resume.pdf'>Resume</a>
-  <a href='#search' class='right'>Search</a>
+    <a href='#home'>Welcome!</a>
+    <a href='#designs'>Designs</a>
+    <a href='Mark Abramov Resume.pdf'>Resume</a>
+    <a href='#search' class='right'>Search</a>
 </nav>
 
 <section>
-  <img class='mySlides' src='./JPGs/collage1.jpg'>
-  <img class='mySlides' src='./JPGs/collage2.jpg'>
-  <img class='mySlides' src='./JPGs/collage3.jpg'>
+    <img class='mySlides' src='./JPGs/collage1.jpg'>
+    <img class='mySlides' src='./JPGs/collage2.jpg'>
+    <img class='mySlides' src='./JPGs/collage3.jpg'>
 </section>
 
- <include-polyfill href="webpage.html" />
-
-<script>
-  var myIndex = 0;
-  carousel();
-
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName('mySlides');
-    for(i=0; i<x.length; i++){
-      x[i].style.display = 'none'
-    }
-    myIndex++;
-    if (myIndex > x.length) myIndex = 1;
-    x[myIndex-1].style.display = 'block';
-    setTimeout(carousel, 4000);
-  }
-</script>
-
+<script src = 'script.js'></script>
 
 
 <div class='row'>
-  <div class='side'>...</div>
-  <div class='main'>...</div>
+    <div class='side'>...</div>
+    <div class='main'>...</div>
 </div>
 
 
 <section class='container-center' style='max-width: 600px'>
-  <h2 class='wide'>ABOUT ME</h2>
-  <p class='opacity'><i>I make designs</i></p>
+    <h2 class='wide'>ABOUT ME</h2>
+    <p class='opacity'><i>I make designs</i></p>
 </section>
 
 <div class='footer'>
-  <h2>Contact Info</h2>
+    <h2>Contact Info</h2>
 </div>
+</body>
+</html>
